@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <body>
+    <script>
+     var usuarios = [
+  {
+    nome: 'Diego',
+    habilidades: ['Javascript', 'ReactJS', 'Redux']
+  },
+  {
+    nome: 'Gabriel',
+    habilidades: ['VueJS', 'Ruby on Rails', 'Elixir']
+  }
+];
+function mostrar(usuarios){
+for (var i = 0; i < usuarios.length; i++)
+{
+		return ("O " + usuarios[i].nome + " possui as habilidades: " + usuarios[i].habilidades.join(", "));
+}
+}
+console.log(mostrar(usuarios));
+     
+    </script>
+  </body>
+</html>

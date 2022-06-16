@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>  
+  </head>
+  <body>
+      <button>Add Box</button>
+      <div class="boxes"></div>
+  <script>
+//Crie um botão que ao ser clicado cria um novo elemento em tela com a forma de um quadrado
+//vermelho com 100px de altura e largura. Sempre que o botão for clicado um novo quadrado deve
+//aparecer na tela.
+let btn = document.querySelector('button')
+btn.addEventListener('click', criarQuadrado)
+
+
+function criarQuadrado() {
+  var boxElement = document.createElement('div')
+
+  boxElement.style.width = '20px';
+  boxElement.style.height = '20px';
+  boxElement.style.backgroundColor = "#f00";
+  boxElement.style.float = 'left';
+
+  document.querySelector('.boxes').appendChild(boxElement)
+}
+  </script>
+  </body>
+</html>
